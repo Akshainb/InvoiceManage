@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+InvoiceManage 📝
 
-## Getting Started
+A full-stack, production-ready invoice management platform built from the ground up. This application allows users to sign up, manage their details, and create, send, and track professional invoices. It features magic link authentication, PDF generation, and automated email reminders for a seamless user experience.
 
-First, run the development server:
+✨ Features
+Magic Link Authentication: Secure, passwordless login using one-time magic links sent via email.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+User Onboarding: A streamlined onboarding process for new users to enter their personal and company details 
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Intuitive Dashboard: A clean dashboard displaying key metrics like total revenue, issued invoices, pending payments, and an animated chart.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Full Invoice CRUD:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Create & Edit: A robust, custom form for creating and editing invoices with server-side and client-side validation.
 
-## Learn More
+Delete & Mark as Paid: Easily manage the status of invoices.
 
-To learn more about Next.js, take a look at the following resources:
+PDF Generation: Generate professional, high-quality PDF invoices on the fly—not just screenshots.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Automated Emails:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Send invoices directly to clients via custom email templates.
 
-## Deploy on Vercel
+Send one-click payment reminders for overdue invoices.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Performance Optimized: Utilizes modern web features like streaming with React Suspense to ensure a fast user experience on data-heavy pages.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+.
+
+💻 Tech Stack
+This project uses a modern, end-to-end TypeScript stack:
+
+Framework: Next.js 15
+Styling: Tailwind CSS
+UI Components: Shadcn UI
+ORM: Prisma
+Database: PostgreSQL (powered by Neon)
+Authentication: Auth.js (NextAuth.js)
+Form Validation: Conform & Zod
+Email Service: Mailtrap
+
